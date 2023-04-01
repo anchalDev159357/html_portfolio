@@ -1,122 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
     <style>
-        a {
-            text-align: center;
-            /* margin: auto; */
-            border-style: groove;
-            border-color: black;
-            margin-left: 8%;
-            /* width: 8%; */
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        } 
-        a:hover{
-            background-color: cornflowerblue;
-        }
-        
-        /* *{
-            background-color:black;
-        } */
-        main{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: white;
-            
-            color:black;
-            /* padding-left: 40%; */
-            padding-top: 15%;
-        }
-        footer{
-            color:black;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: center;
-        }
-        .Pic {
-            padding-top: 25%;
-            padding-left: 48%;
-            width: 90%;
-            
-        }
-        .Myself {
-            font-size: x-large;
-            color: black;
+      main {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: white;
+        color: black;
+        padding-top: 15%;
+      }
+      footer {
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+      .menu-button{
+        width:50px;
+        /* background-color: blue; */
+        padding: 4px 20px;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        /* color: white; */
+        font-weight: bold;
+        cursor: pointer;
+        border: 2px solid black;
+        border-style: double;
+      }
 
-        }
-        .head{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: left;
-            padding-left: 50%;
-            padding-top: 15%;
-        }
-        .p{
-            font-size: medium;
-        }
-        .h2{
-            color: blue;
-            font-size: xx-large;
-
-        }
-        .from{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: left;
-            padding-left: 50%;
-           
-        }
-        .std{
-            padding-left: 50%;
-            text-align: left;
-            color: deeppink;
-            font-size: xx-large;
-        }
-        
+      .menu-button:hover{
+        background-color: cornflowerblue;
+        /* border:3px solid black; */
+        color: black;
+      }
+      
     </style>
-</head>
-<body>
-    <hr>
+  </head>
+  <body>
     <header>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Service</a>
-        <a href="#">More</a>
-        <a href="#">Education</a>
-        <a href="#">Contact</a>
+      <div style="display: flex; justify-content: space-around; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <div class="menu-button">Home</div>
+        <div class="menu-button">About</div>
+        <div class="menu-button">Service</div>
+        <div class="menu-button">Education</div>
+        <div class="menu-button">More</div>
+        <div class="menu-button">Contact</div>
+      </div>
     </header>
-    <hr>
-    <div style="position:absolute">
-        <img src="meripic.jpeg.jpg" alt="Pic" class="Pic"align="left">
-    </div>
-    <div class="head" >
-        <m class="p">My name is Anchal Singh. I'm </m>
-        <m class="h2">Web Devloper.</m>
-    </div>
-    <div class="std">
-        <p>Python || Html || Css || Java Script</p>
-    </div>
-    <div class="from">
-        <p>I'm from Ambedkar Nagar.</p>
-        <p>I have done high school and intermediate from <b>Adarsh Girls Inter College , Ambedkar Nagar.</b></p>
-        <p>Now..</p>
-        <p>I am doing BCA from Dr. Ram Manohar Lohia Avadh <b>University</b>.'faizabaad' and in 1st year.</p>
-        <p>I am new to programming. and my moto would be to become a full stack developer.</p>
-    </div>
-    <main>
-        <hr>
-        <hr>
+
+    <hr />
+    <div style="display: flex; width: 100%; height: 80vh;">
+      <div class="profile-picture" 
+      style="width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;">
+        <div class="profile-container"
+        style=" width: 400px;
+        height: 400px;
+        background-color: darkgrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;">
+            <img src="profilepic.png" style="height: 100%" alt="Profile" />
+        </div>
+      </div>
+      <div
+        class="description"
+        style=" width: 50%; 
+        height: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <div style="padding-top: 25%;">
+            <m>My name is Anchal Singh. I'm </m>
+            <m style="font-size: xx-large;">Web Developer.</m>
+            <p style="font-size: larger;">Python || Html || Css || Java Script</p>
+            <div style="padding-top: 10%;">
+                <p>I'm from Ambedkar Nagar.</p>
+                <p>I have done high school and intermediate from <b>Adarsh Girls Inter College , Ambedkar Nagar.</b></p>
+                <p>Now..</p>
+                <p>I am doing BCA from Dr. Ram Manohar Lohia Avadh <b>University</b>.'faizabaad' and in 1st year.</p>
+                <p>I am new to programming. and my moto would be to become a full stack developer.</p>
+            </div>
+        </div>
+      </div>
+    <!-- 
         <h2>This is my College.</h2>
         <img src="wapic.jpeg" alt="College!" hight="350" width="350"/>
         <h2>Campus!(Dr. Ram Manohar Lohia Avadh University faizabaad.)</h2>
-        <img src="image.jpeg" alt="Campus!"/>
-    </main>
-    <hr>
-    <hr>
-    <footer>
-        <h3>Thank You!</h3>
-    </footer>
-    
-    
-</body>
+        <img src="image.jpeg" alt="Campus!"/>-->
+  </body>
 </html>
